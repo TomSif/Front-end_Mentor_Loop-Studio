@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front end exercise: a homepage with sass preprocessor"
+    />
+    <meta
+      name="keywords"
+      content="web development, frontendmentor, html, css, javascript, homepage, sass"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+        <!-- Mobile burger menu button -->
+        <button
+          id="burger-btn"
+          class="header__burger-btn"
+          aria-label="Open menu"
+          aria-hidden="false"
+        >
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Hamburger menu icon, open navigation menu"
+            class="header__burger-btn__img"
+          />
+        </button>
+        <!-- Unified menu for mobile and desktop -->
+        <ul id="menu" class="menu hidden" aria-hidden="true">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#careers">Careers</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#events">Events</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#products">Products</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#support">Support</a>
+          </li>
+          <!-- Close burger menu button for mobile -->
+          <li id="close-btn" class="menu__close-btn">
+            <button aria-label="Close menu">
+              <img src="./images/icon-close.svg" alt="Close menu" />
+            </button>
+          </li>
+          <li class="menu__logo"><img src="./images/logo.svg" alt="" /></li>
+        </ul>
+      </nav>
+      <h1 class="header__title">Immersive</br>experiences</br>that&nbsp</br>deliver</h1>
+    </header>
+    <main class="main">
+      <section class="main__section">
+        <img
+          src="./images/mobile/image-interactive.jpg"
+          srcset="./images/mobile/image-interactive.jpg 750w, ./images/desktop/image-interactive.jpg 1200w" 
+          sizes="(max-width: 750px) 100vw, 1200px"
+          alt="Interactive VR experience"
+          class="main__image"
+        />
+        <div class="main__container">
+          <h2 class="main__subtitle">The leader in </br>interactive VR</h2>
+          <p class="main__text">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe. Our
+            award-winning creations have transformed businesses through digital
+            experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <section class="main__second-section">
+        <h3 class="main__title">Our creations</h3>
+        <ul class="main__creations-list">
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">DEEP</br>EARTH</p>
+            <a href="#" class="main__creation-link">
+              <img 
+              src="./images/mobile/image-deep-earth.jpg"
+              srcset="
+              ./images/mobile/image-deep-earth.jpg 645w,
+              ./images/desktop/image-deep-earth.jpg 258w"
+              sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+              alt="Description du projet">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">NIGHT</br>ARCADE</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-night-arcade.jpg" 
+                srcset="
+                ./images/mobile/image-night-arcade.jpg 645w,
+                ./images/desktop/image-night-arcade.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 2">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">SOCCER</br>TEAM VR</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-soccer-team.jpg" 
+                srcset="
+                ./images/mobile/image-soccer-team.jpg 645w,
+                ./images/desktop/image-soccer-team.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 3">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">THE</br>GRID</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-grid.jpg" 
+                srcset="
+                ./images/mobile/image-grid.jpg 645w,
+                ./images/desktop/image-grid.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 4">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">FROM UP</br>ABODE VR</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-from-above.jpg" 
+                srcset="
+                ./images/mobile/image-from-above.jpg 645w,
+                ./images/desktop/image-from-above.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 5">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">POCKET</br>BOREALIS</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-pocket-borealis.jpg" 
+                srcset="
+                ./images/mobile/image-pocket-borealis.jpg 645w,
+                ./images/desktop/image-pocket-borealis.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 6">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">THE</br>CURIOSITY</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-curiosity.jpg" 
+                srcset="
+                ./images/mobile/image-curiosity.jpg 645w,
+                ./images/desktop/image-curiosity.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 7">
+            </a>
+          </li>
+          <li class="main__creation-item">
+            <p class="main__creation-list__image-legend">MAKE IT</br>FISHEYE</p>
+            <a href="#" class="main__creation-link">
+              <img 
+                src="./images/mobile/image-fisheye.jpg" 
+                srcset="
+                ./images/mobile/image-fisheye.jpg 645w,
+                ./images/desktop/image-fisheye.jpg 258w"
+                sizes="(max-width: 46.875rem) 100vw, (min-width: 46.876rem) 258px" 
+                alt="Description du projet 7">
+            </a>
+          </li>
+        </ul>
+        <button class="main__see-all-btn">See all</button>
+      </section>
+    </main>
+    <footer class="footer">
+        <!-- Main navigation -->
+        <nav aria-label="main navigation" class="footer__nav">
+        <img src="./images/logo.svg" alt="Logo" class="footer__logo" />
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#about">About</a></li>
+          <li class="footer__nav-item"><a href="#careers">Careers</a></li>
+          <li class="footer__nav-item"><a href="#events">Events</a></li>
+          <li class="footer__nav-item"><a href="#products">Products</a></li>
+          <li class="footer__nav-item"><a href="#support">Support</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social media navigation -->
+      <nav aria-label="Social media" class="footer__social-nav">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+              class="footer__social-link"
+            >
+              <img
+                src="./images/icon-facebook.svg"
+                alt="Facebook"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              aria-label="Twitter"
+              class="footer__social-link"
+            >
+              <img
+                src="./images/icon-twitter.svg"
+                alt="Twitter"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              aria-label="Pinterest"
+              class="footer__social-link"
+            >
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="Pinterest"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              class="footer__social-link"
+            >
+              <img
+                src="./images/icon-instagram.svg"
+                alt="Instagram"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          &copy; 2021 Loopstudios. All rights reserved.
+        </p>
+      </nav>
+    </footer>
+  </body>
+</html>

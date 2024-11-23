@@ -1,0 +1,150 @@
+// +-----------------------------------------------------------+
+//                     Menu Configuration file
+// +-----------------------------------------------------------+
+
+.menu {
+  gap: 3.2vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 177.867vw;
+  background: rgba(0, 0, 0, 100%);
+  color: $primary-white;
+  list-style: none;
+  padding: $mobile-top-padding $mobile-side-padding;
+  margin: 0;
+  transform: translateX(-750px);
+  transition: transform 0.4s ease;
+
+  &--open {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0); // side animation
+  }
+
+  &__item:first-of-type {
+    padding-top: 46.933vw;
+  }
+
+  &__link {
+    font-family: $secondary-font;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 6.4vw;
+    color: $primary-white;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: $primary-white;
+      transform: translateX(-50%);
+      opacity: 0%;
+      transition: width 0.5s ease, left 0.5s ease, transform 0.5s ease,
+        opacity 0.5s ease, right 0.5s ease;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+      left: 0%;
+      right: 0%;
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: $mobile-top-padding;
+    right: 7.04vw;
+
+    button img {
+      width: 5.333vw;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: $mobile-top-padding;
+    left: $mobile-side-padding;
+
+    img {
+      width: 38.4vw;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+// +-----------------------------------------------------------+
+//                      Media Queries Menu
+// +-----------------------------------------------------------+
+
+@media (min-width: 751px) {
+  .menu {
+    display: flex;
+    flex-direction: row !important;
+    position: absolute;
+    gap: 1.75rem;
+    top: 0;
+    right: 0;
+    width: 100%;
+    visibility: visible !important;
+    transform: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 4.5rem clamp(11.528vw, 11.582vw, 15rem);
+
+    &__link {
+      font-size: 1rem;
+      z-index: 99;
+      color: $primary-white;
+      font-family: $primary-font;
+      text-transform: none;
+    }
+
+    &--open {
+      display: none;
+    }
+
+    &__item:first-of-type {
+      padding: 0;
+    }
+
+    &__logo {
+      width: 12rem;
+      height: 1.75rem;
+      position: absolute;
+      top: 4rem;
+      left: 11.528vw;
+    }
+
+    #close-btn {
+      display: none;
+    }
+
+    &__link::after {
+      bottom: -0.6rem;
+    }
+
+    &__link:hover::after,
+    &__link:focus::after {
+      width: 45%;
+      left: 30%;
+    }
+  }
+}

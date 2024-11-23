@@ -1,0 +1,32 @@
+// +-----------------------------------------------------------+
+//                     Main styling scss file
+// +-----------------------------------------------------------+
+
+@import "reset";
+@import "config";
+@import "utilities";
+@import "fonts";
+@import "buttons";
+@import "header";
+@import "menu";
+@import "main";
+@import "footer";
+
+body {
+  width: 100vw;
+  max-width: 2200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 6434px;
+}
+
+// +-----------------------------------------------------------+
+//                      Media Queries Body
+// +-----------------------------------------------------------+
+
+@media (min-width: 751px) {
+  body {
+    max-height: 2896px;
+  }
+}
