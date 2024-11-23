@@ -124,17 +124,19 @@
     display: flex;
     flex-direction: row;
     margin: 0;
-    margin-bottom: auto;
+    margin-top: auto;
     padding-bottom: clamp(2rem, 10rem, 10rem);
-    padding-left: clamp(50px, 11.528vw, 12rem);
-    padding-right: clamp(50px, 11.528vw, 12rem);
+    padding-left: 10.375rem;
+    padding-right: 10.375rem;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 5.52vh;
-    height: 55rem !important;
-    max-height: max-content;
-    width: 100vw;
-    max-width: 2290px;
+    min-height: 10rem;
+    height: 10rem;
+    max-height: 20rem;
+    // width: 100vw;
+    // max-width: 2290px;
+    flex-grow: 1;
+    overflow: hidden;
 
     &__nav {
       display: flex;

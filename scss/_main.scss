@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     background-color: $primary-white;
-    padding-top: 13.333vw;
+    // padding-top: 13.333vw;
     width: 99%;
     max-width: 100%;
     padding-left: 1rem;
@@ -49,7 +49,7 @@
     }
 
     .main__text {
-      padding-top: 6.667vw;
+      // padding-top: 6.667vw;
       color: $primary-dark-Gray;
       font-size: 4.48vw;
       font-family: $primary-font;
@@ -62,9 +62,9 @@
   }
 
   &__see-all-btn {
-    margin-top: 9.067vw;
+    // margin-top: 9.067vw;
     font-size: 5.333vw;
-    height: 10.933vw;
+    // height: 10.933vw;
     border: 2px solid $primary-black;
     font-family: $secondary-font;
     text-transform: uppercase;
@@ -76,7 +76,7 @@
 }
 
 .main__title {
-  margin-top: clamp(9rem, 20.267vw, 18rem);
+  // margin-top: clamp(9rem, 20.267vw, 18rem);
   font-family: $secondary-font;
   font-size: clamp(1rem, 8.533vw, 8rem);
   text-transform: uppercase;
@@ -84,7 +84,7 @@
   line-height: 1;
   color: $primary-black;
   letter-spacing: -0.09rem;
-  padding-bottom: 14.933vw;
+  // padding-bottom: 14.933vw;
 }
 
 .main__creations-list {
@@ -159,11 +159,13 @@
 
 @media (min-width: 751px) {
   .main {
-    padding: clamp(5%, 11.528vw, 12rem);
-    max-width: 100vw;
+    display: block;
+    padding: 10rem;
+    // max-width: 100vw;
+    padding-left: clamp(5%, 11.582vw, 10rem);
     width: 100%;
-    // height: 130.75rem !important;
-    flex-grow: 1;
+    height: 130.75rem !important;
+    overflow: hidden;
 
     &__section {
       display: flex;
@@ -232,11 +234,12 @@
 
     &__creations-list {
       display: grid;
-      grid-template-columns: repeat(4, clamp(8rem, 17.6vw, 24rem)) !important;
+      grid-template-columns: repeat(4, clamp(3rem, 17.6vw, 100rem)) !important;
       grid-template-rows: repeat(2, 1fr) !important;
-      gap: clamp(1rem, 6.6vw, 2rem);
+      // gap: clamp(0.5rem, 6.6vw, 4rem);
       margin: 0;
       position: relative;
+      width: 100vw;
     }
 
     &__creation-link img {

@@ -60,7 +60,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 40.625rem;
+    min-height: 40.625rem;
+    height: 40.625rem;
     position: relative;
     padding: 0;
 
